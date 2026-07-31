@@ -408,7 +408,110 @@ section {
 
 }
 
+/* =========================
+   SKILLS SECTION
+========================= */
 
+
+#skills {
+
+    padding:120px 50px;
+
+}
+
+
+
+.skills-header {
+
+    max-width:800px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+
+
+.skills-header h2 {
+
+    font-family:"Poppins", sans-serif;
+
+    font-size:clamp(2rem,4vw,3.5rem);
+
+    line-height:1.2;
+
+    margin:15px 0 25px;
+
+}
+
+
+
+.skills-header p:last-child {
+
+    color:#94A3B8;
+
+}
+
+
+
+.skills-grid {
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.skill-card {
+
+    background:#161B22;
+
+    padding:40px 35px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s ease;
+
+}
+
+
+
+.skill-card:hover {
+
+    transform:translateY(-8px);
+
+    border-color:#3B82F6;
+
+}
+
+
+
+.skill-card h3 {
+
+    font-family:"Poppins",sans-serif;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.skill-card p {
+
+    color:#94A3B8;
+
+}
 
 /* =========================
    MOBILE
