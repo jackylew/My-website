@@ -334,9 +334,6 @@ nav a:hover {
 
 
 
-/* Cards */
-
-
 .about-cards {
 
     max-width:1200px;
@@ -408,6 +405,8 @@ section {
 
 }
 
+
+
 /* =========================
    SKILLS SECTION
 ========================= */
@@ -420,7 +419,6 @@ section {
 }
 
 
-
 .skills-header {
 
     max-width:800px;
@@ -430,7 +428,6 @@ section {
     text-align:center;
 
 }
-
 
 
 .skills-header h2 {
@@ -446,13 +443,11 @@ section {
 }
 
 
-
 .skills-header p:last-child {
 
     color:#94A3B8;
 
 }
-
 
 
 .skills-grid {
@@ -470,7 +465,6 @@ section {
 }
 
 
-
 .skill-card {
 
     background:#161B22;
@@ -486,7 +480,6 @@ section {
 }
 
 
-
 .skill-card:hover {
 
     transform:translateY(-8px);
@@ -494,7 +487,6 @@ section {
     border-color:#3B82F6;
 
 }
-
 
 
 .skill-card h3 {
@@ -506,12 +498,13 @@ section {
 }
 
 
-
 .skill-card p {
 
     color:#94A3B8;
 
 }
+
+
 
 /* =========================
    WORK SECTION
@@ -525,7 +518,6 @@ section {
 }
 
 
-
 .work-header {
 
     max-width:800px;
@@ -535,7 +527,6 @@ section {
     text-align:center;
 
 }
-
 
 
 .work-header h2 {
@@ -549,8 +540,6 @@ section {
     margin-top:15px;
 
 }
-
-
 
 
 .work-grid {
@@ -568,9 +557,6 @@ section {
 }
 
 
-
-
-
 .project-card {
 
     background:#161B22;
@@ -586,9 +572,6 @@ section {
 }
 
 
-
-
-
 .project-card:hover {
 
     transform:translateY(-10px);
@@ -596,9 +579,6 @@ section {
     border-color:#3B82F6;
 
 }
-
-
-
 
 
 .project-image {
@@ -616,9 +596,6 @@ section {
 }
 
 
-
-
-
 .image-placeholder {
 
     color:#94A3B8;
@@ -630,17 +607,11 @@ section {
 }
 
 
-
-
-
 .project-content {
 
     padding:35px;
 
 }
-
-
-
 
 
 .project-type {
@@ -656,9 +627,6 @@ section {
 }
 
 
-
-
-
 .project-content h3 {
 
     font-family:"Poppins",sans-serif;
@@ -670,17 +638,11 @@ section {
 }
 
 
-
-
-
 .project-content p {
 
     color:#94A3B8;
 
 }
-
-
-
 
 
 .project-tags {
@@ -694,9 +656,6 @@ section {
     margin-top:25px;
 
 }
-
-
-
 
 
 .project-tags span {
@@ -713,6 +672,8 @@ section {
 
 }
 
+
+
 /* =========================
    EXPERIENCE SECTION
 ========================= */
@@ -725,7 +686,6 @@ section {
 }
 
 
-
 .experience-header {
 
     max-width:800px;
@@ -735,7 +695,6 @@ section {
     text-align:center;
 
 }
-
 
 
 .experience-header h2 {
@@ -751,9 +710,6 @@ section {
 }
 
 
-
-
-
 .timeline {
 
     max-width:900px;
@@ -761,7 +717,6 @@ section {
     margin:auto;
 
 }
-
 
 
 .timeline-item {
@@ -785,9 +740,6 @@ section {
 }
 
 
-
-
-
 .timeline-date {
 
     color:#3B82F6;
@@ -797,9 +749,6 @@ section {
 }
 
 
-
-
-
 .timeline-content h3 {
 
     font-family:"Poppins",sans-serif;
@@ -807,7 +756,6 @@ section {
     font-size:1.5rem;
 
 }
-
 
 
 .timeline-content h4 {
@@ -821,12 +769,12 @@ section {
 }
 
 
-
 .timeline-content p {
 
     color:#94A3B8;
 
 }
+
 
 
 /* =========================
@@ -851,13 +799,11 @@ section {
 }
 
 
-
 .contact-content {
 
     max-width:800px;
 
 }
-
 
 
 .contact-content h2 {
@@ -873,15 +819,17 @@ section {
 }
 
 
-
 .contact-content p:not(.section-label) {
 
     color:#94A3B8;
 
     font-size:1.1rem;
 
-}
+    max-width:600px;
 
+    margin:0 auto;
+
+}
 
 
 .contact-buttons {
@@ -892,9 +840,11 @@ section {
 
     gap:20px;
 
-    margin-top:40px;
+    margin-top:30px;
 
 }
+
+
 
 /* =========================
    MOBILE
