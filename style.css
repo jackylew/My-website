@@ -845,6 +845,101 @@ section {
 }
 
 
+/* =========================
+   FOOTER
+========================= */
+
+
+footer {
+
+    padding:60px 50px 30px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+
+
+.footer-content {
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+}
+
+
+
+.footer-brand p {
+
+    color:#94A3B8;
+
+    margin-top:20px;
+
+    max-width:350px;
+
+}
+
+
+
+.footer-links {
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+
+
+.footer-links a {
+
+    color:#94A3B8;
+
+    text-decoration:none;
+
+    transition:.3s ease;
+
+}
+
+
+
+.footer-links a:hover {
+
+    color:white;
+
+}
+
+
+
+.footer-bottom {
+
+    max-width:1200px;
+
+    margin:50px auto 0;
+
+    padding-top:25px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+
+
+.footer-bottom p {
+
+    color:#64748B;
+
+    font-size:.9rem;
+
+}
+
 
 /* =========================
    MOBILE
