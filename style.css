@@ -48,8 +48,12 @@ header {
 
     z-index: 1000;
 
+    animation: navDrop 0.8s ease forwards;
+
 }
 
+
+/* Navigation container */
 
 nav {
 
@@ -64,16 +68,19 @@ nav {
     padding: 16px 32px;
 
 
-    background: rgba(22, 27, 34, 0.65);
+    background: rgba(22, 27, 34, 0.55);
 
-    backdrop-filter: blur(14px);
+    backdrop-filter: blur(18px);
 
-    -webkit-backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(18px);
 
 
-    border: 1px solid rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
 
     border-radius: 20px;
+
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
 
 }
 
@@ -99,7 +106,7 @@ nav {
 
 
 
-/* Navigation Links */
+/* Links */
 
 nav ul {
 
@@ -125,12 +132,11 @@ nav ul li a {
 
     font-size: 0.95rem;
 
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 
 }
 
 
-/* Hover colour */
 
 nav ul li a:hover {
 
@@ -140,7 +146,7 @@ nav ul li a:hover {
 
 
 
-/* Animated underline */
+/* Hover underline */
 
 nav ul li a::after {
 
@@ -150,7 +156,7 @@ nav ul li a::after {
 
     left: 0;
 
-    bottom: -6px;
+    bottom: -8px;
 
     width: 100%;
 
@@ -159,8 +165,6 @@ nav ul li a::after {
     background: #3B82F6;
 
     transform: scaleX(0);
-
-    transform-origin: left;
 
     transition: transform 0.3s ease;
 
@@ -175,6 +179,29 @@ nav ul li a:hover::after {
 }
 
 
+
+/* Navigation entrance animation */
+
+@keyframes navDrop {
+
+    from {
+
+        opacity: 0;
+
+        transform: translate(-50%, -20px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translate(-50%, 0);
+
+    }
+
+}
 
 /* =========================
    PAGE SECTIONS
