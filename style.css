@@ -19,11 +19,17 @@ html {
 
 
 body {
+
     font-family: "Inter", sans-serif;
+
     background: #0E1117;
+
     color: #F8FAFC;
+
     line-height: 1.6;
+
 }
+
 
 
 /* =========================
@@ -53,7 +59,6 @@ header {
 }
 
 
-/* Navigation container */
 
 nav {
 
@@ -79,7 +84,6 @@ nav {
 
     border-radius: 20px;
 
-
     box-shadow: 0 20px 40px rgba(0,0,0,0.25);
 
 }
@@ -90,29 +94,43 @@ nav {
 
 .logo {
 
-    font-family: "Poppins", sans-serif;
+    display: flex;
 
-    font-size: 1.25rem;
-
-    font-weight: 600;
-
-    color: #F8FAFC;
+    flex-direction: column;
 
     text-decoration: none;
 
-    letter-spacing: -0.5px;
+    color: #F8FAFC;
+
+    font-family: "Poppins", sans-serif;
+
+    font-weight: 600;
+
+    line-height: 1.1;
 
 }
 
 
 
-/* Links */
+.logo span {
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 0.7rem;
+
+    color: #94A3B8;
+
+    font-weight: 400;
+
+}
+
+
+
+/* Navigation Links */
 
 nav ul {
 
     display: flex;
-
-    align-items: center;
 
     gap: 35px;
 
@@ -126,13 +144,11 @@ nav ul li a {
 
     position: relative;
 
-    color: #94A3B8;
-
     text-decoration: none;
 
-    font-size: 0.95rem;
+    color: #94A3B8;
 
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 
 }
 
@@ -145,8 +161,6 @@ nav ul li a:hover {
 }
 
 
-
-/* Hover underline */
 
 nav ul li a::after {
 
@@ -166,7 +180,7 @@ nav ul li a::after {
 
     transform: scaleX(0);
 
-    transition: transform 0.3s ease;
+    transition: 0.3s ease;
 
 }
 
@@ -180,7 +194,167 @@ nav ul li a:hover::after {
 
 
 
-/* Navigation entrance animation */
+
+/* =========================
+   HERO SECTION
+========================= */
+
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+
+    background-image:
+
+    linear-gradient(
+        rgba(14,17,23,0.75),
+        rgba(14,17,23,0.9)
+    ),
+
+    url("https://images.unsplash.com/photo-1497366811353-6870744d04b2");
+
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+
+.hero-content {
+
+    max-width: 800px;
+
+    padding: 0 50px;
+
+    animation: heroFade 1s ease forwards;
+
+}
+
+
+
+.hero h1 {
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(3rem, 6vw, 5.5rem);
+
+    line-height: 1.1;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.hero p {
+
+    max-width: 600px;
+
+    font-size: 1.2rem;
+
+    color: #94A3B8;
+
+    margin-bottom: 40px;
+
+}
+
+
+
+
+/* Buttons */
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 20px;
+
+}
+
+
+
+.btn {
+
+    padding: 14px 32px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+
+}
+
+
+
+.primary-btn {
+
+    background: #3B82F6;
+
+    color: white;
+
+}
+
+
+
+.primary-btn:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+
+.secondary-btn {
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    color: white;
+
+}
+
+
+
+.secondary-btn:hover {
+
+    background: rgba(255,255,255,0.08);
+
+}
+
+
+
+/* =========================
+   OTHER SECTIONS
+========================= */
+
+
+section {
+
+    min-height: 100vh;
+
+    padding: 120px 50px;
+
+}
+
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
 
 @keyframes navDrop {
 
@@ -203,32 +377,25 @@ nav ul li a:hover::after {
 
 }
 
-/* =========================
-   PAGE SECTIONS
-========================= */
-
-section {
-
-    min-height: 100vh;
-
-    padding: 120px 50px;
-
-}
 
 
+@keyframes heroFade {
 
-/* =========================
-   BUTTONS
-========================= */
+    from {
 
-button {
+        opacity: 0;
 
-    padding: 14px 28px;
+        transform: translateY(30px);
 
-    border-radius: 30px;
+    }
 
-    border: none;
 
-    cursor: pointer;
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
 
 }
