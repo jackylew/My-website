@@ -891,6 +891,127 @@ nav {
 
 
 
+/* =========================
+   PERSONAL PROJECTS
+========================= */
+
+
+#personal-projects {
+
+    padding:120px 50px;
+
+}
+
+
+.personal-header {
+
+    max-width:800px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+
+.personal-header h2 {
+
+    font-size:clamp(2rem,4vw,3.5rem);
+
+    margin:15px 0 20px;
+
+}
+
+
+.personal-header > p:last-child {
+
+    color:#94A3B8;
+
+}
+
+
+.personal-grid {
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+
+.personal-card {
+
+    background:#161B22;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:40px;
+
+    transition:.35s ease;
+
+}
+
+
+.personal-card:hover {
+
+    transform:translateY(-8px);
+
+    border-color:#3B82F6;
+
+}
+
+
+.personal-card-content h3 {
+
+    font-size:2rem;
+
+    margin:12px 0 20px;
+
+}
+
+
+.personal-card-content p:not(.project-type) {
+
+    color:#94A3B8;
+
+    margin-bottom:18px;
+
+}
+
+
+.personal-card .project-tags {
+
+    margin-top:30px;
+
+}
+
+
+@media(max-width:900px) {
+
+    #personal-projects {
+
+        padding:90px 25px;
+
+    }
+
+
+    .personal-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
 
 
 /* =========================
