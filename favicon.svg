@@ -1,0 +1,50 @@
+/* =========================
+IMAGE OVERLAY
+========================= */
+
+/* Main image darkening */
+.about-visual img,
+.project-image img,
+.personal-image img,
+.personal-secondary-visual img {
+filter:
+brightness(0.72)
+saturate(0.85);
+
+```
+transition:
+    filter 0.4s ease,
+    transform 0.6s ease;
+```
+
+}
+
+/* Subtle brightness increase on hover */
+.about-visual:hover img,
+.project-card:hover .project-image img,
+.personal-card:hover .personal-image img,
+.personal-secondary-visual:hover img {
+filter:
+brightness(0.82)
+saturate(0.9);
+}
+
+/* Keep the TBN floating editing image darker */
+.project-float-image img {
+filter:
+brightness(0.78)
+saturate(0.85);
+
+```
+transition:
+    filter 0.4s ease,
+    transform 0.6s ease;
+```
+
+}
+
+.project-featured:hover .project-float-image img {
+filter:
+brightness(0.84)
+saturate(0.9);
+}
